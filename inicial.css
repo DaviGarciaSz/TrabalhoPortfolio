@@ -51,26 +51,22 @@ header nav ul{
 /* Lista */
 
 header nav ul li{
-    display: inline-block;
+    display: inline-flex;
     padding: 0 40px;
+    
 }
 /* Itens da lista */
 
-header .contato button{
+.botoesum{
     padding: 10px 30px;
     font-size: 18px;
     font-weight: 400;
     background-color: rgb(48, 48, 248);
     border: 0;
     border-radius: 20px;
-    cursor:pointer
-}
-/* Comando para personalizar o botão dos conatos */
-
-header .contato button{
+    cursor:pointer;
     color:white
 }
-/* Comando para mudar a cor do botão */
 
 .principal {
     display: flex;
@@ -95,4 +91,113 @@ header .contato button{
 .imagem{
     margin-left: 10px;   
     margin-top: -20px;
+}
+
+
+.especialidades{ /* Especialidades */
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.especialidades li{
+display: inline-block;
+justify-content: space-evenly;
+width: 30%;
+padding: 30px 20px;
+box-sizing: border-box;
+border: 2px solid #000000;
+border-radius: 10px;
+}
+
+.especialidades i{
+    font-size: 60px;
+    color: rgb(48, 48, 248);
+}
+
+.especialidades p{
+    font-size: 20px;
+}
+
+.especialidades h2{
+    font-size: 25px;
+}
+
+.tituloespecialiadades{
+    color: rgb(48, 48, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} /* Especialidades */
+
+.minhasinformacoes{ /* Sobre */
+    color:rgb(48, 48, 248);
+}
+
+.sobretexto{
+    text-align: center;
+}
+
+.sobretexto p{
+    color: rgb(48, 48, 248);
+}
+
+.cor{
+    color: rgb(48, 48, 248);
+  } /* Sobre */
+
+
+.projeto1{ /* Projetos */
+    display: flex;
+    align-items: top;
+}
+
+.projeto1 img{
+    margin-right: 20px;
+}
+
+.textoprojeto h1{
+    color: rgb(48, 48, 248);
+}
+
+.textoprojeto a{
+    text-decoration-color: rgb(48, 48, 248);
+} /* Projetos */
+
+
+/* Contatos */
+.Contatostitulo{
+    color: rgb(48, 48, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{ 
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+.links li{ 
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1 1% ;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.links{
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Contatos */
+
+html {
+    scroll-behavior: smooth;
 }
