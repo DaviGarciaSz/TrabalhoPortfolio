@@ -9,33 +9,45 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!--Fonte da Página-->
+    <!--Icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Icones-->
     <link rel="shortcut icon" href="imagens/LOGO 3.jpg" type="image/x-icon">
     <title>Portfólio</title>
 </head>
 <body>
+    <script>
+        function rolar(){
+          var obj=event.target.dataset.nome;
+          document.getElementById(obj).scrollIntoView();
+
+        }
+
+        function inicia(){
+            document.getElementById("botaocampo").addEventListener("click",rolar);
+            document.getElementById("botaosobre").addEventListener("click",rolar);
+            document.getElementById("botaoprojetos").addEventListener("click",rolar);
+            document.getElementById("botaocontatos").addEventListener("click",rolar);
+        }
+        window.addEventListener("load",inicia);
+ 
+
+    </script>
 
     <header>
         <div class="interface"><!--INTERFACE-->
             <img src="imagens/LOGO 3.jpg" width="200px" height="200px" class="logo">
          <nav class="menu"><!--MENU-->
             <ul>
-            <li><a href="inicial.html">Início</a></li>
-            <li><a href="especialidades.html">Especialidades</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
+            <li><button class="botoesum" id="botaocampo" data-nome="c1">Campo</button></li>
+            <li><button class="botoesum" id="botaosobre" data-nome="s1">Sobre</button></li>
+            <li><button class="botoesum" id="botaoprojetos" data-nome="p1">Projetos</button></li>
+            <li><button class="botoesum" id="botaocontatos" data-nome="c2">Contatos</button></li> 
             </ul>
 
-         </nav><!--MENU-->
-
-         <div class="contato"><!--Botão contato-->
-          <a href="contatos.html"> 
-            <button>Contatos</button>
-          </a>
-
-        </div><!--Botão contato-->
-
-        </div><!--INTERFACE-->
-    </header>
+            </nav><!--MENU-->
+            </div><!--INTERFACE-->
+            </header>
 
     <div class="principal"><!--Principal(texto e imagem)-->
 
@@ -52,7 +64,94 @@
     </div><!--Principal(texto e imagem)-->
 
     <br>
+    <br>
 
+    <main>
+        <h1 class="tituloespecialiadades" id="c1">Campo atuante</h1>
+
+        <ul class="especialidades">
+        <li>
+            <h2>Criação de Sites</h2>
+            <i class="bi bi-code"></i>
+            <p>Sites em Html css e Javascrpit</p>
+        </li> 
+
+        <li>
+            <h2>Criação de Lojas</h2>
+            <i class="bi bi-cart-plus"></i>
+            <p>Loja online em Html css e Javascrpit</p>
+        </li>
+
+        <li>
+            <h2>Criação de Blogs</h2>
+            <i class="bi bi-browser-chrome"></i>
+            <p>Loja online em Html css e Javascrpit</p>
+        </li>
+
+        </ul>
+    </main>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="sobretexto">
+        <h1 class="minhasinformacoes" id="s1">Minhas Informações</h1>
+        <br>
+        <h3>Nome<spam class="cor">:</spam>Davi Garcia</h3>
+        <h3>Idade<spam class="cor">:</spam>20 anos</h3>
+        <h3>Cursando<spam class="cor">:</spam>Ciências da Computação</h3>
+        <p>Estou atualmente cursando ciências da comoutação na Estácio, tenho aprendizado basico de css e html.</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="projeto1">
+        <img src="imagens/barbearia.jpg" alt="barbearia" width="800" height="600" class="barbeariaestacio">
+        <!--classe para conseguir colocar o texto um em baixo do outro-->
+         <div class="textoprojeto">
+         <a href="Projeto Barbearia/produtos.html" target="_blank">
+         <h1 id="p1">Barbearia Estacio</h1>
+         </a>      
+         <br>                                                                
+         <p>Neste projeto fizemos uma página de uma barberia</p>
+         </div>
+         <!--classe para conseguir colocar o texto um em baixo do outro-->
+    
+     </div>
+
+     <br>
+     <br>
+     <br>
+
+    <h1 class="Contatostitulo" id="c2">Contatos</h1>
+     <ul class="links">
+        <li>
+            <h2>Linkedin</h2>
+            <a href="https://www.linkedin.com" target="_blank">
+            <img src="imagens/linkedin.png" width="100">
+            </a>
+        </li> 
+
+        <li>
+        <h2>Facebook</h2>
+        <a href="https://www.facebook.com" target="_blank">
+        <img src="imagens/fdacebook.png" width="100">
+        </a>
+        </li>
+
+        <li>
+        <h2>Instagram</h2>
+        <a href="https://www.instagram.com" target="_blank">
+        <img src="imagens/instagram.jpg" width="100">
+        </a>
+        </li> 
+        </ul>
 
 </body>
 </html>
